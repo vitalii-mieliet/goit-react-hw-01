@@ -46,18 +46,17 @@
   display: flex;
   justify-content: space-between;
   background-color: #d3d3d3;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 2px solid grey;
 }
 
 .statItem {
   flex: 1;
-  padding: 10px 0;
+  padding: 32px 0;
   text-align: center;
 }
 
 .statItem:not(:last-child) {
-  border-right: 1px solid #ddd;
+  border-right: 2px solid greyfit ac;
 }
 
 .label {
