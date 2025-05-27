@@ -1,6 +1,9 @@
+import capitalizeFirstLetter from "../../helpers/capitalize-first-letter";
+import style from "./TransactionHistory.module.css";
+
 export default function TransactionHistory({ items }) {
   return (
-    <table>
+    <table className={style.table}>
       <thead>
         <tr>
           <th>Type</th>
@@ -11,7 +14,7 @@ export default function TransactionHistory({ items }) {
       <tbody>
         {items.map(item => (
           <tr key={item.id}>
-            <td>{item.type}</td>
+            <td>{capitalizeFirstLetter(item.type)}</td>
             <td>{item.amount}</td>
             <td>{item.currency}</td>
           </tr>
